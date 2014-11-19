@@ -1,14 +1,11 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Wiley Monograph and Edited Book
-Macro Set
-
-Wileysix and Wileysev
-
-February 16, 2012
-Amy Hendrickson
-amyh@texnology.com
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+> Wiley Monograph and Edited Book
+> Macro Set
+> 
+> Wileysix and Wileysev
+> 
+> February 16, 2012
+> Amy Hendrickson
+> amyh@texnology.com
 
 
 Documentation
