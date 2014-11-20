@@ -1533,7 +1533,7 @@
 
 \titleformat{\section}%
   [hang]% shape
-  {\normalfont\Large\itshape}% format applied to label+text
+  {\normalfont\LARGE\bfseries}% format applied to label+text
   {\thesection}% label
   {1em}% horizontal separation between label and title body
   {}% before the title body
@@ -1541,8 +1541,16 @@
 
 \titleformat{\subsection}%
   [hang]% shape
-  {\normalfont\large\itshape}% format applied to label+text
+  {\normalfont\Large\itshape}% format applied to label+text
   {\thesubsection}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+\titleformat{\subsubsection}%
+  [hang]% shape
+  {\normalfont\large\itshape}% format applied to label+text
+  {\thesubsubsection}% label
   {1em}% horizontal separation between label and title body
   {}% before the title body
   []% after the title body
@@ -1561,15 +1569,15 @@
   
 % Subsubsection and following section headings shouldn't be used.
 % See Bringhurst's _The Elements of Typography_, section 4.2.2.
-\renewcommand\subsubsection{%
-  \TufteError{\noexpand\subsubsection is undefined by this class.%
-    \MessageBreak See Robert Bringhurst's _The Elements of 
-    \MessageBreak Typographic Style_, section 4.2.2.
-    \MessageBreak \noexpand\subsubsection was used}
-    {From Bringhurst's _The Elements of Typographic Style_, section 4.2.2: Use as 
-    \MessageBreak many levels of headings as you need, no more and no fewer.  Also see the many 
-    \MessageBreak related threads on Ask E.T. at http://www.edwardtufte.com/.}
-}
+%\renewcommand\subsubsection{%
+%  \TufteError{\noexpand\subsubsection is undefined by this class.%
+%    \MessageBreak See Robert Bringhurst's _The Elements of 
+%    \MessageBreak Typographic Style_, section 4.2.2.
+%    \MessageBreak \noexpand\subsubsection was used}
+%    {From Bringhurst's _The Elements of Typographic Style_, section 4.2.2: Use as 
+%    \MessageBreak many levels of headings as you need, no more and no fewer.  Also see the many 
+%    \MessageBreak related threads on Ask E.T. at http://www.edwardtufte.com/.}
+%}
 
 \renewcommand\subparagraph{%
   \TufteError{\noexpand\subparagraph is undefined by this class.%
