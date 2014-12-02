@@ -1,4 +1,9 @@
 /**
+ * Code taken from John Lees-Miller
+ * http://jdlm.info/
+ */
+
+/**
  * Returns the current page number of the presentation.
  */
 function currentPosition() {
