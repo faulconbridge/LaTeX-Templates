@@ -40,7 +40,7 @@
     <div class="slide hidden" id="slide-3">
       <section class="slide-content">
         <h3>Some automagic code styling</h3>
-        <pre><code>
+        <pre><code class="r">
 ## Order studies by year, experiment
 data <- data[order(data$Year, data$Study), ]
 
@@ -66,6 +66,11 @@ summary(fit)
       <h3>Let's try with some perl now!</h3>
       <pre><code>
 my $counter = 0;
+
+# In batches of 5 per day w/2-hour delay
+# between each item, submit a supercomputer
+# job to download and parse a genome in
+# our array
 
 while($counter < @genomes) {
         for (my $i = 0; $i < 5; $i++) {
