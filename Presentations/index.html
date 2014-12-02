@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title></title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="hljs/styles/default.css">
     <script type="text/javascript" src="slideshow.js"></script>
+    <script src="hljs/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
     <!-- Demo scripts -->
     <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['geochart']}]}"></script>
@@ -33,6 +36,48 @@
         <h3>Rotavirus Background</h3>
         <div id="regions_div" style="width: 800px; height: 500px;"></div>
       </section>
+    </div>
+
+    <div class="slide hidden" id="slide-3">
+      <section class="slide-content">
+        <h3>Some automagic code styling</h3>
+        <pre><code>
+## Order studies by year, experiment
+data <- data[order(data$Year, data$Study), ]
+
+## Create an object of class meta
+## Specify random-effects model
+## Use mean difference, maximum likelihood estimation
+fit <- metacont(ExpN, ExpMean, ExpSD, CtrlN, CtrlMean, CtrlSD,
+                studlab = paste(Author, Year, Study),
+                data = na.omit(data), comb.random = TRUE,
+                comb.fixed = FALSE, prediction = TRUE,
+                sm = "MD", method.tau = "ML",
+                method.bias = "rank", hakn = TRUE)
+
+## Summarize model
+summary(fit)
+
+        </code></pre>
+      </section>
+    </div>
+
+    <div class="slide hidden" id="slide-4">
+    <section class="slide-content">
+      <h3>Let's try with some perl now!</h3>
+      <pre><code>
+my $counter = 0;
+
+while($counter < @genomes) {
+        for (my $i = 0; $i < 5; $i++) {
+                qsub($genomes[$counter]);
+                $counter++;
+                sleep(7200);
+        }
+        sleep(50400);
+}
+      </code></pre>
+    </section>
     </div>
 
     <div class="controls">
