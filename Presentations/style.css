@@ -256,15 +256,19 @@ pre {
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 */
 
-code, pre {
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  overflow: auto;
-  padding: 6px 10px;
+pre {
+  width: 100%;
+  background: #000;
+  position: absolute;
+  left: 0;
+  overflow-x: hidden;
 }
 
 code {
-  padding: 0 5px;
+  overflow: auto;
+  padding: 6px 10px;
+  position: relative;
+  left: 10%;
 }
 
 pre>code {
