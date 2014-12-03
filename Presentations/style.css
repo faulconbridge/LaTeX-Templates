@@ -40,7 +40,7 @@ body {
 
 .arrow {
   width: 0; height: 0;
-  border: 30px solid #333;
+  border: 15px solid #333;
   float: left;
   margin-right: 30px;
 
@@ -58,7 +58,7 @@ body {
   border-left-color: transparent;
 
   border-left-width: 0;
-  border-right-width: 50px;
+  border-right-width: 25px;
 }
 
 .next {
@@ -66,7 +66,7 @@ body {
   border-bottom-color: transparent;
   border-right-color: transparent;
 
-  border-left-width: 50px;
+  border-left-width: 25px;
   border-right-width: 0;
 }
 
