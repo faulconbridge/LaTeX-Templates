@@ -40,22 +40,15 @@
     <div class="slide hidden" id="slide-3">
       <section class="slide-content">
         <h3>Some automagic code styling</h3>
-        <pre><code class="r">
-## Order studies by year, experiment
-data <- data[order(data$Year, data$Study), ]
-
-## Create an object of class meta
-## Specify random-effects model
-## Use mean difference, maximum likelihood estimation
-fit <- metacont(ExpN, ExpMean, ExpSD, CtrlN, CtrlMean, CtrlSD,
-                studlab = paste(Author, Year, Study),
-                data = na.omit(data), comb.random = TRUE,
-                comb.fixed = FALSE, prediction = TRUE,
-                sm = "MD", method.tau = "ML",
-                method.bias = "rank", hakn = TRUE)
-
-## Summarize model
-summary(fit)
+        <pre><code>
+cells = SelectComponents[
+   DeleteBorderComponents[Binarize[i, {0.4, .73}]], {"Area", "Holes", 
+    "AdjacentBorderCount"}, #1 > 350 && #2 > 0 && #3 == 0 &];
+circles = 
+  ComponentMeasurements[
+    ImageMultiply[i, cells], {"Centroid", "EquivalentDiskRadius"}][[
+   All, 2]];
+Show[i, Graphics[{Blue, Thick, Circle @@ # & /@ circles}]]
 
         </code></pre>
       </section>
