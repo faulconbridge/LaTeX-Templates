@@ -164,6 +164,13 @@ pre {
   text-align: right;
 }
 
+img {
+  height: 85%;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
 @media (max-width: 850px) {
 
   body {
@@ -264,8 +271,8 @@ pre {
   }
 
   img {
-    max-height: 85%;
-    max-width: 85%;
+    width: 6in;
+    height: auto;
   }
 
   .slide:nth-child(odd) {
