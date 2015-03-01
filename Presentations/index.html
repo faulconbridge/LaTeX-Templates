@@ -33,13 +33,19 @@
     </div>
 
     <script>
+      var data = [];
+      var slideLen = document.getElementsByClassName('slide').length;
+      for(i = 1; i <= slideLen; i++) {
+        data.push(i);
+      }
+
       d3.selectAll("div.slide")
-        .data([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
+        .data(data)
         .attr("id", function(d) { return "slide-" + d; });
 
       d3.selectAll("section").attr("class", "slide-content");
     </script>
-
+    
     <div class="controls">
       <div class="arrow prev"></div>
       <div class="arrow next"></div>
